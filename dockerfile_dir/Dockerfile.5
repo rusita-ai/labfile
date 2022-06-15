@@ -1,0 +1,6 @@
+FROM ubuntu
+ADD  host.html  /test_dir/add.html
+COPY host.html  /test_dir/copy.html
+ADD  https://github.com/kubernetes/kubernetes/blob/master/LICENSE /test_dir/
+ADD  add_data.tgz /test_dir/
+COPY copy_data.tgz /test_dir/

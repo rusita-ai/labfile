@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: label-app01
+  labels:
+    app: nodejs
+    environment: develop
+    release: beta
+spec:
+  containers:
+    - name: nodejs
+      image: takytaky/app:v1
+      ports:
+      - containerPort: 80
