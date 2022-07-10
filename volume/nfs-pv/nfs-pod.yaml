@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nfs-pod
+spec:
+  containers:
+  - name: nfs-pod
+    image: takytaky/app:log
+    ports:
+    - containerPort: 80
+    volumeMounts:
+    - mountPath: "/tmp"
+      name: nfs-vol
+  volumes:
+  - name: nfs-vol
+    persistentVolumeClaim:
+      claimName: nfs-pvc
