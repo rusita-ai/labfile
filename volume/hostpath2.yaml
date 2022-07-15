@@ -4,7 +4,7 @@ metadata:
   name: hostpath-pod
 spec:
   nodeSelector:
-    kubernetes.io/hostname: worker1
+    kubernetes.io/hostname: worker2
   containers:
   - name: hostpath-container
     image: takytaky/app:v1
