@@ -11,4 +11,4 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   nfs:
     path: /
-    server: 10.106.221.129
+    server: 10.96.174.73

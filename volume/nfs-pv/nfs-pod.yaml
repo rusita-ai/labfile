@@ -9,7 +9,7 @@ spec:
     ports:
     - containerPort: 80
     volumeMounts:
-    - mountPath: "/tmp"
+    - mountPath: /mnt
       name: nfs-vol
   volumes:
   - name: nfs-vol

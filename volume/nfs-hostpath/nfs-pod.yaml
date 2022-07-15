@@ -14,4 +14,4 @@ spec:
   - name : nfs-volume
     nfs:
       path: /
-      server: {NFS_SERVICE_IP}
+      server: 10.96.174.73
